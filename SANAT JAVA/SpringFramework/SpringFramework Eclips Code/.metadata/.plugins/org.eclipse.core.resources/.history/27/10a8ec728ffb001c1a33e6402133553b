@@ -1,0 +1,5 @@
+package JavaBeans;
+
+public interface Calculator {
+
+}

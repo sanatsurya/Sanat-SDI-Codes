@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Supper_Keyword_Example&apos; to &apos;SupperKeywordExample&apos;&#x0D;&#x0A;- Original project: &apos;SpringFrameWork&apos;&#x0D;&#x0A;- Original element: &apos;Supper_Keyword_Example&apos;&#x0D;&#x0A;- Renamed element: &apos;SupperKeywordExample&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Supper_Keyword_Example&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Supper_Keyword_Example.java[Supper_Keyword_Example" matchStrategy="1" name="SupperKeywordExample" qualified="false" references="true" similarDeclarations="false" stamp="1654580727684" textual="false" version="1.0"/>
+</session>

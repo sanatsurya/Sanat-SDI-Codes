@@ -1,0 +1,3 @@
+Primitive values stores for simple values & Reference type is for storing complex objects
+TYPE            BYTE                Range
+byte             1                     -128

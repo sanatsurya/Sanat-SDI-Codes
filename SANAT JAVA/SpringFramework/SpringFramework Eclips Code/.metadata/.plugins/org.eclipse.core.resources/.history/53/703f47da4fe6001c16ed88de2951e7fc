@@ -1,0 +1,35 @@
+class Animal {
+	String name;
+
+	public Animal(String name) {
+		super();
+		this.name = name;
+		System.out.println("Inside parrent class constructor" + name);
+	}
+	public String getName() {
+		System.out.println("");
+		return name;
+	}
+}
+
+class Lion {
+	String foodType;
+
+	public Lion(String foodType) {
+		super();
+		this.foodType = foodType;
+		System.out.println("Inside side class");
+	}
+	public String getFoodType(){
+		System.out.println("Inside get food type methord");
+		return this.foodType;
+		
+	}
+}
+
+public class SupperKeywordExample {
+	public static void main(String[] args) {
+		Lion lion1 = new Lion("meat");
+	}
+
+}

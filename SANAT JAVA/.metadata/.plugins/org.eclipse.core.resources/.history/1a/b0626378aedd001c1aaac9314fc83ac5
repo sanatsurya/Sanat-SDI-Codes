@@ -1,0 +1,20 @@
+@FunctionalInterface
+interface FunctionalDemo{
+	int add(int a, int b);
+}
+class FunctionalImpl implements FunctionalDemo{
+
+	@Override
+	public int add(int a, int b) {
+		// TODO Auto-generated method stub
+		return a+b;
+	}
+	
+}
+public class FunctionalInterface1 {
+	public static void main(String[] args) {	
+		FunctionalImpl f1 = new FunctionalImpl();
+		System.out.println(f1.add(5, 9));
+	}
+
+}

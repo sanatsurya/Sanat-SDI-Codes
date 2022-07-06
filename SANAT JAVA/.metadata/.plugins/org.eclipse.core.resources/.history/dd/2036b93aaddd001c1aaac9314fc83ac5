@@ -1,0 +1,10 @@
+
+interface FunctionalDemo{
+	int add(int a, int b);
+}
+public class FunctionalInterface1 {
+	public static void main(String[] args) {
+		
+	}
+
+}
