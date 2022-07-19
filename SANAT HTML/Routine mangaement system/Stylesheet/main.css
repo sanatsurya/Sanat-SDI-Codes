@@ -1,0 +1,22 @@
+*{
+margin: auto;
+padding: 0;
+box-sizing: border-box;
+}
+.navbar{
+    background-color: aquamarine;
+    color: blue;
+}
+.navbar ul li{
+    text-decoration: none;
+    text-align: left;
+    
+}
+.navbar ul li a{
+    text-emphasis: none;
+    color: black;
+}
+.navlogo img{
+    height: 25px;
+    width: 35px;
+}
