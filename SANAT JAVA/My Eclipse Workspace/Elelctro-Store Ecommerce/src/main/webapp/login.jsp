@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -59,28 +61,28 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item ">
-                                 <a class="nav-link" href="index.html">Home</a>
+                                 <a class="nav-link" href="index.jsp">Home</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
+                                 <a class="nav-link" href="about.jsp">About</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="computer.html">Computer</a>
+                                 <a class="nav-link" href="computer.jsp">Computer</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="laptop.html">Laptop</a>
+                                 <a class="nav-link" href="laptop.jsp">Laptop</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="product.html">Products</a>
+                                 <a class="nav-link" href="product.jsp">Products</a>
                               </li>
-                              <li class="nav-item ">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.jsp">Contact Us</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="login.html">Login</a>
+                              <li class="nav-item d_none active">
+                                 <a class="nav-link" href="login.jsp">Login</a>
                               </li>
                            </ul>
                         </div>
@@ -92,8 +94,9 @@
       </header>
       <!-- end header inner -->
       <!-- end header -->
-      <!--  contact -->
-      <div class="contact">
+      <!--  Login -->
+      <!--<div class="contact">  -->
+      <div class="contact login">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -104,21 +107,19 @@
             </div>
             <div class="row">
                <div class="col-md-10 offset-md-1">
-                  <form id="request" class="main_form">
+                  <form id="request" class="main_form" method="post" action="login">
                      <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="User Name" type="email" name="User"> 
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="email" name="Email"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Password" type="password" name="Password"> 
+                           <input class="contactus" placeholder="Password" type="password" name="Email"> 
                         </div>
-                       
                         <div class="col-md-12">
                            <button class="send_btn">Login</button>
                         </div>
-                        <div class="col-md-20">
-                      		<a class="send_btn"  href="registration.html">Register</a>
-                           
+                        <div class="col-md-12">
+                           <a href="#" id="registerGo" style="color: white;color: #eaed16;font-size: 15px;font-family: math;">Not register</a>
                         </div>
                      </div>
                   </form>
@@ -127,6 +128,49 @@
          </div>
       </div>
       <!-- end contact -->
+      <!-- Sign Up Start -->
+      <div class="contact register">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Register</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Name" type="text" name="Name"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="email" name="Email"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Phone Number" type="number" name="Pone">                          
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Password" type="password" name="pass">                          
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Retype Password" type="password" name="retype Password">                          
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Register</button>
+                        </div>
+                        <div class="col-md-12">
+                           <a href="#" id="loginGo" style="color: white;color: #eaed16;font-size: 15px;font-family: math;">Already register</a>
+                        </div>
+                        
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Sign Up End -->
       <!--  footer -->
       <footer>
          <div class="footer">
@@ -166,7 +210,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <p>© 2022 Sanats™ Design</p>
+                        <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
                      </div>
                   </div>
                </div>
@@ -182,6 +226,20 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+      $(Document).ready(function(){
+          $( ".register" ).hide();
+          $("#registerGo").click(function(){
+              $(".register").show();
+              $(".login").hide();
+          });
+          $("#loginGo").click(function(){
+        	  $(".register").hide();
+              $(".login").show();
+          });
+      });
+      </script>
    </body>
 </html>
 

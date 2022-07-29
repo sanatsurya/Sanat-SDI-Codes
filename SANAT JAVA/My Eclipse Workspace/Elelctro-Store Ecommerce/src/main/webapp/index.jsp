@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -60,28 +61,28 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Home</a>
+                                 <a class="nav-link" href="index.jsp">Home</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
+                                 <a class="nav-link" href="about.jsp">About</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="computer.html">Computer</a>
+                                 <a class="nav-link" href="computer.jsp">Computer</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="laptop.html">Laptop</a>
+                                 <a class="nav-link" href="laptop.jsp">Laptop</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="product.html">Products</a>
+                                 <a class="nav-link" href="product.jsp">Products</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="contact.jsp">Contact Us</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="login.html">Login</a>
+                                 <a class="nav-link" href="login.jsp">Login</a>
                               </li>
                            </ul>
                         </div>
@@ -428,7 +429,40 @@
       <!-- end customer -->
 
       <!--  contact -->
-
+      <div class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Contact Now</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
       <!-- end contact -->
       <!--  footer -->
       <footer>
@@ -469,7 +503,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <p>© 2022 Sanats™ Design</p>
+                        <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
                      </div>
                   </div>
                </div>
@@ -488,3 +522,4 @@
    </body>
 </html>
 
+    
